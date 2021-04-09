@@ -115,6 +115,21 @@
 }
 
 
+.form-row .slno {
+    width: 60px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 11px;
+}
+.inp{
+    width: 180px;
+}
+.wid{
+    width: 40px;
+    padding: 40px;
+}
+
 .form-row .value {
     width: -webkit-calc(100% - 188px);
     width: -moz-calc(100% - 188px);
@@ -171,6 +186,8 @@ html {
 .banner-image {
     margin-top: 30px;
 }
+
+
 
 /* ==========================================================================
    #RESET
