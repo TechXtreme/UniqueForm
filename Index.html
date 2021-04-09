@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Admission Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-wrapper  p-t-30 p-b-50">
+            <div class="wrapper wrapper--w900">
+                <div class="card card-6">
+                    <div class="banner-image text-center">
+                        <img src="img/uniqtechie.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <br><br>
+                    <div class="card-heading ">
+                        <h5 class="title ">TRAINING, DEVELOPMENT, RECRUITMENT, OUTSOURCING
+                        </h5>
+                        <h5 class="title title-2">Tulasi House, # 27, Opp to HP Petrol station, Nandini Layout,
+                            Bangalore
+                            560096 </h5>
+                        <h1 class="title title-3">ADMISSION FORM</h1>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST">
+                            <div class="container row">
+
+                                <div class="col-md-6">
+                                    <div class="form-row">
+                                        <div class="name nm2">Sl. No :</div>
+                                        <div class="value">
+                                            <input class="input--style-6" onfocus="this.value='' " type="text"
+                                                name="full_name" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-3 col-sm-12  Student-image">
+                                    <div>
+
+                                        <div class="image-upload-wrap iuw-1">
+                                            <input class="file-upload-input fui-1" type='file'
+                                                onchange="readURL1(this);" accept="image/*" />
+                                            <div class="drag-text dx-1">
+                                                <h3>Add Your Photo Here</h3>
+                                            </div>
+                                        </div>
+                                        <div class="file-upload-content fil-uploadc-1 ">
+                                            <img class="file-upload-image ui-1" src="#" alt="your image" />
+                                            <div class="image-title-wrap itw-1">
+                                                <button type="button" onclick="removeUpload1()"
+                                                    class="remove-image ri-1">Remove image
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 "></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Student Name</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="full_name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Date Of Birth</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" type="date" onfocus="this.value='' " name="date"
+                                    placeholder="Date" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Gender</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <select class="form-select custom-select input--style-6" name="gender"
+                                    id=" inputGroupSelect01" required>
+                                    <option selected>Choose...</option>
+                                    <option class="" value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Email address</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" type="email" name="email" onfocus="this.value='' "
+                                    placeholder="example@email.com" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Phone Number</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" onfocus="this.value= '' " type="tel" pattern="[0-9]{10}"
+                                    required name="Phone" placeholder="Valid Phone Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Marital Status</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <select class="form-select custom-select input--style-6" name="Marital Status"
+                                    id=" inputGroupSelect01" required>
+                                    <option selected>Choose...</option>
+                                    <option class="" value="1">Married</option>
+                                    <option value="2">Unmarried</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Father's Name</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="Father's Name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Mother's Name</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="Mother's Name"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Residential Address </div>
+                        <div class="value">
+                            <div class="input-group">
+                                <textarea class="textarea--style-6" name="address"
+                                    placeholder="Your Residential Address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Guardian's Contact Number</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" onfocus="this.value= '' " type="tel" pattern="[0-9]{10}"
+                                    required name="Phone2" placeholder="Valid Phone Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Highest Qualification</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text"
+                                name="Highest Qualification" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Aggregation In SSLC</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="SSLC"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Aggregation In PUC</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="PUC"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Aggregation In Degree</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="Degree"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Admission Sought In</div>
+                        <div class="value">
+                            <input class="input--style-6" onfocus="this.value='' " type="text" name="Sought In"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Course You Want To Join</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <select class="form-select custom-select input--style-6" name="Marital Status"
+                                    id=" inputGroupSelect01" required>
+                                    <option selected>Choose...</option>
+                                    <option class="" value="1">Full Stack Development</option>
+                                    <option value="2">Front End</option>
+                                    <option value="3">Back End</option>
+                                    <option value="4">Database</option>
+                                    <option value="5">Digital Marketing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Date Of Admission</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" type="date" onfocus="this.value='' "
+                                    name="date-of-admission" placeholder="Date" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-5"></div>
+
+                    <div class="container row">
+
+                        <div class="col-md-4 text-center ">
+
+
+                            <div>
+                                <div class="image-upload-wrap  iuw-2">
+                                    <input class="file-upload-input fui-2" type='file' onchange="readURL2(this);"
+                                        accept="image/*" />
+                                    <div class="drag-text dx-2">
+                                        <h3> Signature Here</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content fil-uploadc-2">
+                                    <img class="file-upload-image ui-2" src="#" alt="your image" />
+                                    <div class="image-title-wrap itw-2">
+                                        <button type="button" onclick="removeUpload2()" class="remove-image ri-2">Remove
+                                            Image
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <h4 class="ftname">Signature Of Parent/Guardian</h5>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4 col-sm-12 text-center ">
+
+
+                            <div>
+                                <div class="image-upload-wrap  iuw-3">
+                                    <input class="file-upload-input fui-3" type='file' onchange="readURL3(this);"
+                                        accept="image/*" />
+                                    <div class="drag-text dx-3">
+                                        <h3> Signature Here</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content  fil-uploadc-3">
+                                    <img class="file-upload-image ui-3 " src="#" alt="your image" />
+                                    <div class="image-title-wrap  itw-3">
+                                        <button type="button" onclick="removeUpload3()" class="remove-image ri-3">Remove
+                                            Image
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="ftname">Signature Of Managing Director</h4>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+
+                    </form>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+        <hr class="footer-line">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 text-left">
+                <a type="submit" class="ftr" href="mailto:Info@uniqtechie.in">Info@uniqtechie.in</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <a type="submit" class="ftr" href="tel:9880959620">9880959620</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-right">
+                <a type="submit" class="ftr" target="_blank" href="http://uniqtechie.in">uniqtechie.in</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <br><br>
+    <div class="card-footer1 text-center">
+        <button class="btn btn--radius-2 btn--blue-2" onclick="window.print()">Print
+            Form</button>
+    </div>
+    <br><br>
+
+
+    <script>
+        // function readURL(input) {
+        //     if (input.files && input.files[0]) {
+
+        //         var reader = new FileReader();
+
+        //         reader.onload = function (e) {
+        //             $('.image-upload-wrap').hide();
+
+        //             $('.file-upload-image').attr('src', e.target.result);
+        //             $('.file-upload-content').show();
+
+        //             $('.image-title').html(input.files[0].name);
+        //         };
+
+        //         reader.readAsDataURL(input.files[0]);
+
+        //     } else {
+        //         removeUpload();
+        //     }
+        // }
+
+        // function removeUpload() {
+        //     $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        //     $('.file-upload-content').hide();
+        //     $('.image-upload-wrap').show();
+        // }
+        // $('.image-upload-wrap').bind('dragover', function () {
+        //     $('.image-upload-wrap').addClass('image-dropping');
+        // });
+        // $('.image-upload-wrap').bind('dragleave', function () {
+        //     $('.image-upload-wrap').removeClass('image-dropping');
+        // });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
